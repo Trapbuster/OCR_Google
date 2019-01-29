@@ -3,3 +3,5 @@
 
 
 2.Add the image to the current directory to read it
+
+3. Currently supports .png files only.
