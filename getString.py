@@ -4,9 +4,9 @@ from PIL import Image
 import pytesseract
 import os
 
-path = os.getcwd() + "/OCR_Google/"
+path = os.getcwd() + '/'
 print("This is the working directory   " + path)
-#name = raw_input("Enter the name of the image \t")
+name = raw_input("\n\nEnter the name of the image \t")
 #print("\n\n name is of type \t" + type(name))
 #print("\n\n path2 is of type \t" + type(path2))
 def getString(img_path):
@@ -30,5 +30,7 @@ def getString(img_path):
     return resultString
 
 print('\n\n-----Recognizing Start------\n\n')
-print(getString(path + "image.png"))
+path1 = path + name + ".png"
+print ('\n\n' + path1 + "\n\n")
+print(getString(path1))
 print('\n\n------Done------')
