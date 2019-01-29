@@ -2,6 +2,7 @@
 
 
 
-2.Add the image to the current directory to read it
+2.Add the image to the current directory to read it.
 
-3. Currently supports .png files only.
+
+3.Currently supports .png files only.
