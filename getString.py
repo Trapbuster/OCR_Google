@@ -3,6 +3,7 @@ import numpy as np
 from PIL import Image
 import pytesseract
 import os
+from google import google
 
 path = os.getcwd() + '/'
 print("This is the working directory   " + path)
@@ -29,8 +30,19 @@ def getString(img_path):
 
     return resultString
 
+def gSearch(queryString):
+    searchResults = google.search(queryString)
+    return searchResults
 print('\n\n-----Recognizing Start------\n\n')
 path1 = path + name + ".png"
 print ('\n\n' + path1 + "\n\n")
-print(getString(path1))
+resultStr = getString(path1)
+
+print 'The result of the recognition is ' + resultStr
+
+sResult = gSearch(resultStr)
+
+
+
+
 print('\n\n------Done------')
